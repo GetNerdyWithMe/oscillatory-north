@@ -1,28 +1,37 @@
 # Oscillatory North
 
-This repository explores whether biological systems select a preferred **oscillatory reference frame** (“north”) to reduce structural or informational instability.
+Different systems keep doing the same thing.
 
-The project is motivated by a simple observation:  
-multiple biological and mechanical systems exhibit oscillatory behavior, yet consistently converge toward a narrow set of stable rhythms.
+Trees under wind loading, a person on a swing, and simple neural oscillator models all tend to settle into a small set of stable motions, even when many are possible. The details differ, but the structure repeats.
 
-Rather than proposing a unified theory, this repository serves as a structured research scaffold connecting:
+This repository is where that pattern was worked through using simple dynamical models.
 
-- tree sway and growth adaptation under wind loading
-- human vestibular regulation during rhythmic motion (e.g., swinging)
-- neural oscillatory alignment and prediction stability
+---
 
-The emphasis is on modeling, open questions, and cross-domain consistency.
+## Repository Structure
 
-This repository is intentionally incomplete.
+- `src/` – shared computational core
+- `math/` – governing equations and dimensional analysis
+- `mechanics/` – swing dynamics and mode selection
+- `ecology/` – tree sway models
+- `neuroscience/` – coupled oscillator behavior
+- `results/` – qualitative stability comparisons
+- `framework/` – cross-domain synthesis
+- `docs/` – project notes
 
-## Scope and Limitations
+**Entry point:** `math/canonical_oscillator.py`
+
+---
 
 ## Notes
 
-The models here stay intentionally simple.
+The models are simple by design.
 
-They are meant to make shared structure visible, not to match empirical
-systems in detail.
+They exist to make repeated structure visible, not to reproduce any
+single system faithfully.
 
-Where interpretation begins depends on the domain.
+How the behavior is interpreted depends on the domain.
 
+---
+
+This repository stops where the structure becomes clear.
