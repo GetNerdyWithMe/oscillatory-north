@@ -5,10 +5,11 @@ import matplotlib.pyplot as plt
 g = 9.81
 L = 2.0
 
+# forced pendulum
 def swing(t, y):
     theta, theta_dot = y
-    human_input = 0.2 * np.sin(t)
-    theta_ddot = - (g / L) * theta + human_input
+    forcing = 0.2 * np.sin(t)
+    theta_ddot = - (g / L) * theta + forcing
     return [theta_dot, theta_ddot]
 
 y0 = [0.1, 0.0]
@@ -26,5 +27,5 @@ plt.figure()
 plt.plot(solution.t, solution.y[0])
 plt.xlabel("Time")
 plt.ylabel("Angle (rad)")
-plt.title("Human-Driven Swing Dynamics")
+plt.title("Forced pendulum")
 plt.show()
