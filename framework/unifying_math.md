@@ -10,3 +10,5 @@ Tree sway, pendulum motion, and neural oscillations all reduce to systems govern
 Despite differences in scale and substrate, each system exhibits convergence toward stable oscillatory modes under sustained forcing.
 
 This suggests oscillatory reference frame selection may be a mathematically generic phenomenon.
+
+After nondimensionalization, tree sway, swing motion, and neural oscillators differ primarily in damping and forcing structure rather than fundamental form.
