@@ -2,6 +2,9 @@ import numpy as np
 from scipy.integrate import solve_ivp
 import matplotlib.pyplot as plt
 
+# This system exhibits stable oscillations when damping balances forcing.
+# Changing zeta alters convergence behavior and stability.
+
 # Canonical second-order oscillator:
 # x'' + 2*zeta*omega*x' + omega^2*x = F(t)
 
