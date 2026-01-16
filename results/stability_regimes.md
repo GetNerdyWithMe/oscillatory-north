@@ -12,4 +12,6 @@ These regimes appear consistently across:
 - swing dynamics
 - coupled oscillator systems
 
-This suggests stability selection is parameter-driven rather than domain-specific.
+Similar transitions appeared across all modeled systems when damping
+was varied over comparable ranges.
+
