@@ -9,3 +9,5 @@ A dynamically selected oscillatory state that minimizes instability over time un
 The framework does not assert universality, but highlights repeated emergence across mechanical, ecological, and neural systems.
 
 Across models, stability corresponds to convergence toward predictable oscillatory trajectories in state space.
+
+Reference frames emerge not only in frequency, but in the selection of stable oscillatory modes.
