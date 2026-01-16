@@ -17,13 +17,12 @@ This repository is intentionally incomplete.
 
 ## Scope and Limitations
 
-This repository demonstrates that oscillatory systems across domains
-share common stability structures when expressed in nondimensional form.
+## Notes
 
-It does not:
-- claim biological equivalence between systems
-- propose a unified theory of cognition
-- attempt parameter fitting to empirical data
+The models here stay intentionally simple.
 
-Its purpose is to expose a shared mathematical scaffold and identify
-where domain-specific interpretation begins.
+They are meant to make shared structure visible, not to match empirical
+systems in detail.
+
+Where interpretation begins depends on the domain.
+
