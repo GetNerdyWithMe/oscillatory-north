@@ -13,3 +13,4 @@ Rather than proposing a unified theory, this repository serves as a structured r
 
 The emphasis is on modeling, open questions, and cross-domain consistency.
 
+This repository is intentionally incomplete.
