@@ -1,12 +1,7 @@
-# Parameter values chosen to make regime changes visible, not to fit data.
-
-
+# exploratory parameters
 import numpy as np
 from scipy.integrate import solve_ivp
 import matplotlib.pyplot as plt
-
-# This system exhibits stable oscillations when damping balances forcing.
-# Changing zeta alters convergence behavior and stability.
 
 # Canonical second-order oscillator:
 # x'' + 2*zeta*omega*x' + omega^2*x = F(t)
@@ -37,7 +32,6 @@ solution = solve_ivp(
     t_eval=t_eval
 )
 
-# Increasing damping suppresses oscillation amplitude and accelerates convergence.
 
 # Plot
 plt.figure()
@@ -58,7 +52,7 @@ plt.title("Effect of Damping on Oscillatory Stability")
 plt.legend()
 plt.show()
 
-# ---- Phase space comparison (mode selection) ----
+# phase space
 
 plt.figure()
 
@@ -83,5 +77,3 @@ plt.legend()
 plt.axis("equal")
 plt.savefig("results/phase_space_modes.png", dpi=150)
 plt.show()
-
-
