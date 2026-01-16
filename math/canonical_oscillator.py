@@ -36,14 +36,20 @@ solution = solve_ivp(
 
 # Plot
 plt.figure()
-plt.plot(solution.t, solution.y[0])
+
+for zeta in [0.05, 0.2, 0.6]:
+    solution = solve_ivp(
+        oscillator,
+        t_span,
+        y0,
+        args=(omega, zeta),
+        t_eval=t_eval
+    )
+    plt.plot(solution.t, solution.y[0], label=f"zeta = {zeta}")
+
 plt.xlabel("Time")
 plt.ylabel("Displacement")
-plt.title("Canonical Driven Oscillator")
+plt.title("Effect of Damping on Oscillatory Stability")
+plt.legend()
 plt.show()
-plt.figure()
-plt.plot(solution.y[0], solution.y[1])
-plt.xlabel("x")
-plt.ylabel("x_dot")
-plt.title("Phase Space Trajectory")
-plt.show()
+
