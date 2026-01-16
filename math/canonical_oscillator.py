@@ -34,6 +34,8 @@ solution = solve_ivp(
     t_eval=t_eval
 )
 
+# Increasing damping suppresses oscillation amplitude and accelerates convergence.
+
 # Plot
 plt.figure()
 
