@@ -1,3 +1,7 @@
+# NOTE:
+# This file is a domain-specific application of the canonical oscillator
+# defined in src/oscillators.py
+
 import numpy as np
 from scipy.integrate import solve_ivp
 import matplotlib.pyplot as plt
