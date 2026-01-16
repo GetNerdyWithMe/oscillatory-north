@@ -58,3 +58,30 @@ plt.title("Effect of Damping on Oscillatory Stability")
 plt.legend()
 plt.show()
 
+# ---- Phase space comparison (mode selection) ----
+
+plt.figure()
+
+for zeta in [0.05, 0.2]:
+    solution = solve_ivp(
+        oscillator,
+        t_span,
+        y0,
+        args=(omega, zeta),
+        t_eval=t_eval
+    )
+    plt.plot(
+        solution.y[0],      # x
+        solution.y[1],      # x_dot
+        label=f"zeta = {zeta}"
+    )
+
+plt.xlabel("x")
+plt.ylabel("x_dot")
+plt.title("Phase Space Trajectories and Mode Collapse")
+plt.legend()
+plt.axis("equal")
+plt.savefig("results/phase_space_modes.png", dpi=150)
+plt.show()
+
+
