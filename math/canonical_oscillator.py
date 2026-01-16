@@ -1,3 +1,6 @@
+# Parameter values chosen to make regime changes visible, not to fit data.
+
+
 import numpy as np
 from scipy.integrate import solve_ivp
 import matplotlib.pyplot as plt
